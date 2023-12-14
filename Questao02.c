@@ -17,10 +17,10 @@ float calcularMedia(struct Aluno aluno) {
 void verificarAprovacao(struct Aluno aluno) {
     if (aluno.media >= 7.0) {
         printf("\n Media do Aluno : %2.f ",aluno.media);
-		printf("%s est· aprovado(a).\n", aluno.nome);
+		printf("%s est√° aprovado(a).\n", aluno.nome);
     } else {
         printf("\n Media do Aluno : %2.f ",aluno.media);
-		printf("%s est· reprovado(a).\n", aluno.nome);
+		printf("%s est√° reprovado(a).\n", aluno.nome);
     }
 }
 
@@ -30,7 +30,7 @@ int main() {
 	struct Aluno alunos[TAMANHO_ARRAY];
     int i;
     
-    // Preencher informaÁıes dos alunos
+    // Preencher informa√ß√µes dos alunos
     for (i = 0; i < TAMANHO_ARRAY; i++) {
         printf("Digite o nome do aluno %d: ", i+1);
         scanf("%s", alunos[i].nome);
@@ -44,10 +44,10 @@ int main() {
         printf("Digite a segunda nota do aluno %d: ", i+1);
         scanf("%f", &alunos[i].notas[1]);
         
-        // Calcular mÈdia
+        // Calcular m√©dia
         alunos[i].media = calcularMedia(alunos[i]);
         
-        // Verificar aprovaÁ„o
+        // Verificar aprova√ß√£o
         verificarAprovacao(alunos[i]);
     }
     
